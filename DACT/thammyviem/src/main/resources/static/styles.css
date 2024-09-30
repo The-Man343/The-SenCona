@@ -1,0 +1,661 @@
+/* styles.css */
+
+/* Cơ bản cho body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Light background for header */
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+}
+
+.search-container input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-container button {
+    padding: 5px;
+    border: none;
+    background-color: #007bff; /* Button background color */
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%; /* Ensure image fills width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text h2 {
+    font-size: 36px; /* Main headline size */
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 18px; /* Subtitle size */
+}
+
+/* Button Style */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker button on hover */
+}
+
+/* Services Section */
+.services {
+    padding: 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: center; /* Center align services */
+    flex-wrap: wrap;
+    gap: 10px; /* Space between service items */
+}
+
+.service-item {
+    margin: 0;
+    flex: 1 1 30%; /* Flexible items with min-width */
+    max-width: 300px; /* Max width for service item */
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f9fa; /* Light footer background */
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #007bff; /* Hover color for social links */
+}
+
+/* Products Section */
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center; /* Center align products */
+    gap: 10px; /* Space between products */
+    flex-wrap: wrap;
+}
+
+.product-item {
+    border: 1px solid #ccc; /* Border for product items */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 200px; /* Fixed width for product item */
+    text-align: left;
+    transition: transform 0.3s ease; /* Scale effect on hover */
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+.product-item h3 {
+    font-size: 20px; /* Product title size */
+    margin: 10px 0; /* Space around title */
+}
+
+.product-item p {
+    font-size: 16px; /* Description size */
+}
+
+/* Events Section */
+.events {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.events h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #343a40;
+}
+
+.event-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event-item {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.event-item:hover {
+    transform: scale(1.05);
+}
+
+.event-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.event-item h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #007bff;
+}
+
+.event-item p {
+    font-size: 1em;
+    color: #6c757d;
+}
+
+.event-item .btn {
+    margin-top: 15px;
+}
+
+/* Team Section */
+.team {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.team h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #343a40;
+}
+
+.team p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+.team .row {
+    display: flex;
+    justify-content: center;
+}
+
+.team .col-md-4 {
+    margin: 10px;
+    text-align: center;
+}
+
+.team img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team h3 {
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.team p {
+    font-size: 1em;
+    color: #6c757d;
+}
+
+/* Expert and Branch styles */
+.experts .row,
+.branches .row {
+    margin: 0; /* Remove outer margin */
+}
+
+.experts .col-md-4,
+.branches .col-md-4 {
+    padding: 5px; /* Reduce padding */
+}
+
+.experts img,
+.branches img {
+    margin-bottom: 5px; /* Space below images */
+}
+
+/* Branches Section */
+.branches {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Light background for branches */
+}
+
+.branches h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #343a40;
+}
+
+.branches .row {
+    display: flex;
+    justify-content: center; /* Center align branches */
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.branch-item {
+    text-align: center; /* Center align text in each branch */
+    margin: 10px; /* Space around each branch item */
+    flex: 1 1 30%; /* Flexible items with min-width */
+}
+
+.branch-item img {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Facilities Section */
+.facilities {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Light background for facilities */
+}
+
+.facilities h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #343a40;
+}
+
+.facilities .row {
+    margin: 0; /* Remove outer margin */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center align items */
+}
+
+.facilities .col-md-4 {
+    padding: 10px; /* Reduce padding */
+    text-align: center; /* Center align text */
+}
+
+.facilities img {
+    margin-bottom: 10px; /* Space below images */
+    width: 100%; /* Full width for images */
+    height: auto; /* Auto height for images */
+}
+
+.facilities h3 {
+    font-size: 1.5em;
+    color: #007bff; /* Title color */
+}
+
+.facilities p {
+    font-size: 1em;
+    color: #6c757d; /* Description color */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header .logo h1 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+.info-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-page p {
+    margin-bottom: 20px;
+}
+
+.core-values {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.history-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.history-item i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.news-events {
+    margin-bottom: 20px;
+}
+
+.news-events h4 {
+    margin-top: 15px;
+}
+
+.news-events a {
+    display: inline-block;
+    margin-top: 5px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.news-events a:hover {
+    text-decoration: underline;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.registration-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.registration-form button {
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.contact-info {
+    margin: 10px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #fff;
+}
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* News Section */
+section.news {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section.news h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 10px;
+}
+
+article {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+article h3 {
+    font-size: 22px;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 16px;
+    color: #666;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.social-media a:hover {
+    color: #f39c12;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    section.news {
+        padding: 10px;
+    }
+
+    article h3 {
+        font-size: 18px;
+    }
+}

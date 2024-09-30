@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thẩm Mỹ Viện</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/test/styles.css">
+    <style>
+        /* Điều chỉnh khoảng cách giữa các phần tử trong cơ sở vật chất và đội ngũ chuyên gia */
+        .facilities .row, .experts .row, .branches .row {
+            margin: 0; /* Xóa khoảng cách bên ngoài cho hàng */
+        }
+
+        .facilities .col-md-4, .experts .col-md-4, .branches .col-md-4 {
+            padding: 10px; /* Giảm khoảng cách giữa các cột */
+        }
+
+        .facilities img, .experts img, .branches img {
+            margin-bottom: 10px; /* Giảm khoảng cách giữa hình ảnh và tiêu đề nếu có */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Thẩm Mỹ Viện</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="about.html">Về Chúng Tôi</a></li>
+                <li><a href="services.html">Dịch Vụ</a></li>
+                <li><a href="products.html">Sản Phẩm</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+                <li><a href="customer.html">Đăng Nhập Khách Hàng</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button type="submit">Tìm Kiếm</button>
+        </div>
+    </header>
+
+    <!-- Hero Section với Carousel -->
+    <section class="hero">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/test/th (5).jpg" alt="Los Angeles" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h2>Chào Mừng Đến Với Thẩm Mỹ Viện</h2>
+                        <p>Vẻ Đẹp Của Bạn, Sứ Mệnh Của Chúng Tôi</p>
+                        <a href="#" class="btn btn-primary">Đặt Lịch Hẹn</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/test/th (5).jpg" alt="Chicago" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h2>Dịch Vụ Tối Ưu</h2>
+                        <p>Chúng Tôi Mang Đến Những Trải Nghiệm Tuyệt Vời</p>
+                        <a href="#" class="btn btn-primary">Xem Thêm</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/test/th (5).jpg" alt="New York" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h2>Trải Nghiệm Đẳng Cấp</h2>
+                        <p>Liên Hệ Với Chúng Tôi Ngay Hôm Nay</p>
+                        <a href="#" class="btn btn-primary">Liên Hệ</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Dịch Vụ Section -->
+    <section class="services">
+        <h2>Dịch Vụ Của Chúng Tôi</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <img src="th (6).jpg" alt="Dịch Vụ 1">
+                <h3>Điều Trị Da Mặt</h3>
+                <p>Thư giãn và làm đẹp với các liệu trình điều trị da mặt chuyên nghiệp.</p>
+            </div>
+            <div class="service-item">
+                <img src="th (6).jpg" alt="Dịch Vụ 2">
+                <h3>Điêu Khắc Cơ Thể</h3>
+                <p>Đạt được vóc dáng mơ ước với dịch vụ điêu khắc cơ thể của chúng tôi.</p>
+            </div>
+            <div class="service-item">
+                <img src="th (6).jpg" alt="Dịch Vụ 3">
+                <h3>Tẩy Lông Bằng Laser</h3>
+                <p>Loại bỏ lông vĩnh viễn với công nghệ laser tiên tiến.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sản Phẩm Section -->
+    <section class="products">
+        <h2>Sản Phẩm Nổi Bật</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="th (1).jpg" alt="Sản Phẩm 1">
+                <h3>Serum Chống Lão Hóa</h3>
+                <p>Trải nghiệm làn da tươi trẻ với serum chống lão hóa mạnh mẽ của chúng tôi.</p>
+            </div>
+            <div class="product-item">
+                <img src="th (2).jpg" alt="Sản Phẩm 2">
+                <h3>Kem Dưỡng Ẩm</h3>
+                <p>Dưỡng ẩm và nuôi dưỡng làn da với kem dưỡng ẩm bán chạy nhất của chúng tôi.</p>
+            </div>
+            <div class="product-item">
+                <img src="th (3).jpg" alt="Sản Phẩm 3">
+                <h3>Kem Chống Nắng</h3>
+                <p>Bảo vệ làn da khỏi tác hại của ánh nắng với kem chống nắng SPF 50.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sự Kiện Section -->
+<!-- Sự Kiện Section -->
+<div class="events">
+    <h2>Sự Kiện Nổi Bật</h2>
+    <div class="event-grid">
+        <div class="event-item">
+            <img src="th (11).jpg" alt="Vòng quay may mắn" class="img-fluid">
+            <h3>Vòng Quay May Mắn Tháng 9</h3>
+            <p>Tham gia vòng quay may mắn để nhận nhiều phần quà hấp dẫn!</p>
+            <a href="#" class="btn btn-primary">Xem thêm</a>
+        </div>
+        <div class="event-item">
+            <img src="th (3).jpg" alt="Nhượng quyền SeoulSpa.Vn" class="img-fluid">
+            <h3>Nhượng Quyền SeoulSpa.Vn</h3>
+            <p>Khám phá cơ hội nhượng quyền với SeoulSpa.Vn, thương hiệu hàng đầu trong lĩnh vực thẩm mỹ.</p>
+            <a href="#" class="btn btn-primary">Xem thêm</a>
+        </div>
+        <div class="event-item">
+            <img src="th (2).jpg" alt="Lễ ký kết hợp tác" class="img-fluid">
+            <h3>Lễ Ký Kết Hợp Tác</h3>
+            <p>Chúng tôi tự hào công bố lễ ký kết hợp tác chuyển giao công nghệ thẩm mỹ tiên tiến.</p>
+            <a href="#" class="btn btn-primary">Xem thêm</a>
+        </div>
+        <div class="event-item">
+            <img src="th (11).jpg" alt="Chuỗi hội thảo Meso" class="img-fluid">
+            <h3>Chuỗi Hội Thảo Trải Nghiệm Meso Không Kim 5.0</h3>
+            <p>Bước tiến mới trong công nghệ trẻ hóa da không xâm lấn, hãy đến và trải nghiệm!</p>
+            <a href="#" class="btn btn-primary">Xem thêm</a>
+        </div>
+    </div>
+</div>
+
+    
+<!-- Cơ sở vật chất -->
+<section class="facilities">
+    <div class="container">
+        <h2>Cơ Sở Vật Chất</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="th (8).jpg" alt="Cơ sở 1">
+                <h3>Thư Viện Hiện Đại</h3>
+                <p>Thư viện được trang bị đầy đủ sách vở và thiết bị học tập hiện đại.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="th (1).jpg" alt="Cơ sở 2">
+                <h3>Phòng Học Thông Minh</h3>
+                <p>Phòng học với thiết bị công nghệ mới nhất giúp nâng cao trải nghiệm học tập.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="th (8).jpg" alt="Cơ sở 3">
+                <h3>Phòng Thí Nghiệm</h3>
+                <p>Phòng thí nghiệm được trang bị hiện đại, phục vụ cho các môn học thực hành.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Đội Ngũ Chuyên Gia Section -->
+<section class="team mt-5">
+    <h2 class="text-center">Đội Ngũ Chuyên Gia</h2>
+    <p class="text-center">Chúng tôi tự hào có đội ngũ chuyên gia dày dạn kinh nghiệm, tận tâm với nghề và luôn cập nhật công nghệ mới nhất để phục vụ khách hàng.</p>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="th (10).jpg" alt="Chuyên Gia 1" class="img-fluid">
+            <h3>Nguyễn Văn A</h3>
+            <p>Bác sĩ da liễu với 10 năm kinh nghiệm trong lĩnh vực thẩm mỹ.</p>
+        </div>
+        <div class="col-md-4">
+            <img src="th (10).jpg" alt="Chuyên Gia 2" class="img-fluid">
+            <h3>Trần Thị B</h3>
+            <p>Chuyên gia điều trị da, nổi bật trong việc sử dụng công nghệ tiên tiến.</p>
+        </div>
+        <div class="col-md-4">
+            <img src="th (10).jpg" alt="Chuyên Gia 3" class="img-fluid">
+            <h3>Phạm Văn C</h3>
+            <p>Bác sĩ phẫu thuật thẩm mỹ, chuyên thực hiện các ca phẫu thuật thành công.</p>
+        </div>
+    </div>
+</section>
+
+
+<div class="branches">
+    <h2>Chi Nhánh Của Chúng Tôi</h2>
+    <div class="row">
+        <div class="col-md-4 branch-item">
+            <img src="/test/th (1).jpg" alt="Chi nhánh 1">
+            <h3>Chi Nhánh 1</h3>
+        </div>
+        <div class="col-md-4 branch-item">
+            <img src="/test/th (1).jpg" alt="Chi nhánh 2">
+            <h3>Chi Nhánh 2</h3>
+        </div>
+        <div class="col-md-4 branch-item">
+            <img src="/test/th (1).jpg" alt="Chi nhánh 3">
+            <h3>Chi Nhánh 3</h3>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Thẩm Mỹ Viện. Bản quyền thuộc về Thẩm Mỹ Viện.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
