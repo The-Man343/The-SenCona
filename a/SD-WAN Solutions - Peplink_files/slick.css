@@ -1,0 +1,136 @@
+/* ===================== Slider Styles ===================== */
+
+/* Cấu hình chung cho slider */
+.slick-slider {
+    position: relative; /* Đặt vị trí của slider ở vị trí tương đối */
+    display: block; /* Đảm bảo slider là một phần tử block */
+    box-sizing: border-box; /* Đảm bảo padding và border được tính vào kích thước tổng thể */
+    
+    /* Cấu hình để không cho phép chọn văn bản trong slider */
+    -webkit-user-select: none; /* Không cho phép chọn văn bản trên thiết bị Webkit */
+    -moz-user-select: none; /* Không cho phép chọn văn bản trên Firefox */
+    -ms-user-select: none; /* Không cho phép chọn văn bản trên Internet Explorer */
+    user-select: none; /* Không cho phép chọn văn bản trên tất cả các trình duyệt */
+    
+    /* Các thuộc tính liên quan đến thao tác chạm trên thiết bị di động */
+    -webkit-touch-callout: none; /* Tắt callout trên thiết bị Webkit */
+    -khtml-user-select: none; /* Tắt khả năng chọn văn bản trên trình duyệt KHTML */
+    -ms-touch-action: pan-y; /* Cấu hình hành động vuốt trên các trình duyệt hỗ trợ MS */
+    touch-action: pan-y; /* Chỉ cho phép vuốt dọc */
+    -webkit-tap-highlight-color: transparent; /* Tắt hiệu ứng highlight khi nhấn */
+}
+
+/* ===================== Slick List ===================== */
+
+/* Cấu hình cho danh sách các slide */
+.slick-list {
+    position: relative; /* Đặt vị trí của slick-list ở vị trí tương đối */
+    display: block; /* Đảm bảo danh sách là một phần tử block */
+    overflow: hidden; /* Ẩn các phần tử vượt quá phạm vi của slick-list */
+    margin: 0; /* Đặt margin của slick-list về 0 */
+    padding: 0; /* Đặt padding của slick-list về 0 */
+}
+
+/* Loại bỏ outline khi slick-list được focus */
+.slick-list:focus {
+    outline: none; /* Xóa outline khi slick-list được focus */
+}
+
+/* Cấu hình khi kéo (dragging) trên slick-list */
+.slick-list.dragging {
+    cursor: pointer; /* Đổi con trỏ thành pointer khi kéo */
+    cursor: hand; /* Trên một số trình duyệt cũ */
+}
+
+/* ===================== Slick Track ===================== */
+
+/* Cấu hình cho track chứa các slide */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0); /* Sử dụng 3D transform để tăng hiệu suất */
+    -moz-transform: translate3d(0, 0, 0); /* Sử dụng 3D transform trên Firefox */
+    -ms-transform: translate3d(0, 0, 0); /* Sử dụng 3D transform trên IE */
+    -o-transform: translate3d(0, 0, 0); /* Sử dụng 3D transform trên Opera */
+    transform: translate3d(0, 0, 0); /* Sử dụng 3D transform để xử lý track */
+}
+
+/* Cấu hình cho slick-track */
+.slick-track {
+    position: relative; /* Đặt vị trí của slick-track ở vị trí tương đối */
+    top: 0; /* Đặt vị trí trên của slick-track về 0 */
+    left: 0; /* Đặt vị trí trái của slick-track về 0 */
+    display: block; /* Đảm bảo slick-track là một phần tử block */
+    margin-left: auto; /* Tự động căn giữa bên trái */
+    margin-right: auto; /* Tự động căn giữa bên phải */
+}
+
+/* Slick track sử dụng pseudo-element để tạo các phần tử trống cho việc clear float */
+.slick-track:before,
+.slick-track:after {
+    display: table; /* Tạo phần tử dạng table cho các pseudo-element */
+    content: ''; /* Chèn nội dung rỗng để thực hiện clear */
+}
+
+/* Clear float */
+.slick-track:after {
+    clear: both; /* Dọn dẹp các phần tử float */
+}
+
+/* Cấu hình khi slick-track đang trong trạng thái loading */
+.slick-loading .slick-track {
+    visibility: hidden; /* Ẩn slick-track khi đang tải */
+}
+
+/* ===================== Slick Slide ===================== */
+
+/* Cấu hình cho mỗi slide */
+.slick-slide {
+    display: none; /* Mặc định ẩn các slide */
+    float: left; /* Trượt các slide sang trái */
+    height: 100%; /* Đảm bảo chiều cao slide chiếm 100% */
+    min-height: 1px; /* Đảm bảo slide có chiều cao tối thiểu */
+}
+
+/* Khi đang sử dụng chế độ RTL (Right to Left), trượt các slide sang phải */
+[dir='rtl'] .slick-slide {
+    float: right; /* Chế độ RTL */
+}
+
+/* Cấu hình cho hình ảnh trong mỗi slide */
+.slick-slide img {
+    display: block; /* Đảm bảo hình ảnh hiển thị là block, tránh khoảng trống dưới hình */
+}
+
+/* Cấu hình khi slide đang được tải (loading) */
+.slick-slide.slick-loading img {
+    display: none; /* Ẩn hình ảnh khi slide đang được tải */
+}
+
+/* Cấu hình khi kéo (dragging) */
+.slick-slide.dragging img {
+    pointer-events: none; /* Tắt các sự kiện pointer khi đang kéo slide */
+}
+
+/* Hiển thị các slide khi slider đã được khởi tạo */
+.slick-initialized .slick-slide {
+    display: block; /* Hiển thị các slide khi slider đã được khởi tạo */
+}
+
+/* Cấu hình khi slide đang được tải */
+.slick-loading .slick-slide {
+    visibility: hidden; /* Ẩn slide khi đang tải */
+}
+
+/* Cấu hình cho slider theo chiều dọc (vertical slider) */
+.slick-vertical .slick-slide {
+    display: block; /* Hiển thị các slide theo chiều dọc */
+    height: auto; /* Chiều cao tự động */
+    border: 1px solid transparent; /* Thêm border cho các slide */
+}
+
+/* ===================== Slick Arrow ===================== */
+
+/* Ẩn các mũi tên điều hướng khi không cần thiết */
+.slick-arrow.slick-hidden {
+    display: none; /* Ẩn các mũi tên điều hướng */
+}

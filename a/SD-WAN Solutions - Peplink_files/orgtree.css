@@ -1,0 +1,75 @@
+#orgchart {
+    border-spacing: 0 !important;
+    border-collapse: unset !important;
+}
+
+    #orgchart > tbody > tr > td {
+        width: 30px;
+        height: 22px;
+        text-align: center;
+        vertical-align: middle;
+        border-color: #613711;
+        padding: 0;
+        font: bold 14px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+
+.org-border-1 {
+    border-top: 2px solid;
+    border-left: 2px solid;
+}
+
+.org-border-2 {
+    border-top: 2px solid;
+}
+
+.org-border-3 {
+    border-top: 2px solid;
+    border-right: 2px solid;
+}
+
+.org-border-4 {
+    border-right: 2px solid;
+}
+
+.org-border-5 {
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.org-border-6 {
+    border-bottom: 2px solid;
+}
+
+.org-border-7 {
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.org-border-8 {
+    border-left: 2px solid;
+}
+
+.org-border-9 {
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #8F5D40;
+}
+
+.org-border-10 {
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #8F5D40;
+}
+
+.org-border-11 {
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #8F5D40;
+}
+
+.org-border-12 {
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #8F5D40;
+}
